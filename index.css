@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    font-weight: 700;
+    color: #EDEDED;
+}
+
+a {
+    text-align: center;
+}
+
+.adoteaqui {
+    display: flex;
+    flex-direction: row;
+    background: rgb(255, 208, 8);
+    width: 30vw;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 0px 0px 0px 8px;
+}
+
+#adote-texto {
+    font-size: 20px;
+    font-weight: 600;
+    color: #EDEDED;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background: #171717;
+    width: 70vw;
+    justify-content: space-around;
+    padding: 15px;
+    font-weight: 400;
+    color: #EEEEEE;
+    border-radius: 0px 0px 8px 0px;
+}
+
+#home:hover, #sobre:hover, #contato:hover {
+    cursor: pointer;
+    color: rgb(255, 208, 8);
+    font-size: 130%;
+}
+
+#adote-texto:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 130%;
+}
+
+.adoteaqui a {
+    transition: all 0.5s ease 0s;
+}
+
+.container a {
+    transition: all 0.5s ease 0s;
+}
+
+@media (max-width: 700px) {
+    .adoteaqui{
+        display: none;
+    }
+    .container {
+        width: 100vw;
+        flex-direction: column;
+        line-height: 30px;
+        border-radius: 0px 0px 8px 8px;
+    }
+}
